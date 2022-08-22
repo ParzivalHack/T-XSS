@@ -37,7 +37,7 @@ def submit_form(form_details, url, value):
             input_value = input.get("value")
             if input_name and input_value:
                 data[input_name] = input_value
-        if form_details["method"] == "post":
+        if form_details.get["method"] == "post":
             return requests.post(target_url, data = data)
         else:
             return requests.get(target_url, params = data)
