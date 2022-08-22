@@ -23,7 +23,7 @@ def get_form_details(form):
         input_name = input_tag.attrs.get("name")
         inputs.append({"type": input_type, "name": input_name})
     details["action"] = action
-    details["methods"] = method
+    details["method"] = method
     details["inputs"] = inputs
     return details
 def submit_form(form_details, url, value):
