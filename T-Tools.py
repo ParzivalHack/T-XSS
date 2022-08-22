@@ -4,14 +4,19 @@ import requests
 from pprint import pprint
 from bs4 import BeautifulSoup as bs
 from urllib.parse import urljoin
-import colorama
+import logging
 os.system("clear")
-os.system("toilet T-XSS")
+os.system("toilet T-Tools")
 print("Coded By: ParzivalHack")
 print("Github: github.com/ParzivalHack")
 print("License: The source code of this tool is under the GPL v.3 License.")
 print("© 2022 Tommaso Bona")
-print("Example of website intentionally vulnerable to XSS (use this to test if the tool is working properly): https://xss-game.appspot.com/level1/frame")
+print(" ＞＞＞＞>>>＞ [Menu] ＜<<<＜＜＜＜ ")
+print("            ➡ [1] XSS Scanner ")
+print("            ➡ [2] Web Crawler ")
+print("            ➡ [3] Coming soon ")
+options = int(input("Select Option: "))
+if options == 1:
 def get_all_forms(url):
     soup = bs(requests.get(url).content, "html.parser")
     return soup.find_all("form")
@@ -60,3 +65,5 @@ def scan_xss(url):
 if __name__ == "__main__":
     url = str(input("Target URL: "))
     print(scan_xss(url))
+    if options == 2:
+        
