@@ -33,7 +33,7 @@ def submit_form(form_details, url, value):
     for input in inputs:
         if input["type"] == "text" or input["type"] == "search":
             input["value"] = value
-            input_name = input.gety("name")
+            input_name = input.get("name")
             input_value = input.get("value")
             if input_name and input_value:
                 data[input_name] = input_value
