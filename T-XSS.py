@@ -4,6 +4,7 @@ import requests
 from pprint import pprint
 from bs4 import BeautifulSoup as bs
 from urllib.parse import urljoin
+import colorama
 os.system("clear")
 os.system("toilet T-XSS")
 print("Coded By: ParzivalHack")
@@ -46,7 +47,7 @@ def scan_xss(url):
     forms = get_all_forms(url)
     print(f"[+] Detected {len(forms)} forms on {url}.")
     js_script = "<Script>alert('XSS vulnerable')</scripT>"
-    is_vulnerable = False
+    is_vulnerable = {colorama.Fore.RED}Not Vulnerable
     for form in forms:
         form_details = get_form_details(form)
         content = submit_form(form_details, url, js_script).content.decode()
@@ -54,7 +55,7 @@ def scan_xss(url):
             print(f"[+] XSS Detected on {url}")
             print(f"[*] Form details: ")
             pprint(form_details)
-            is_vulnerable = True
+            is_vulnerable = {colorama.Fore.GREEN}Vulnerable
     return is_vulnerable
 if __name__ == "__main__":
     url = str(input("Target URL: "))
