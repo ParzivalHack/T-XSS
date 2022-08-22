@@ -19,6 +19,7 @@ This is how it works:
 * pkg install toilet
 * pkg install requests
 * pkg install bs4
+* pip install colorama
 * git clone https://github.com/ParzivalHack/T-XSS
 
 # Usage
