@@ -47,7 +47,7 @@ def scan_xss(url):
     forms = get_all_forms(url)
     print(f"[+] Detected {len(forms)} forms on {url}.")
     js_script = "<Script>alert('XSS vulnerable')</scripT>"
-    is_vulnerable = {colorama.Fore.RED}False
+    is_vulnerable = False
     for form in forms:
         form_details = get_form_details(form)
         content = submit_form(form_details, url, js_script).content.decode()
@@ -55,7 +55,7 @@ def scan_xss(url):
             print(f"[+] XSS Detected on {url}")
             print(f"[*] Form details: ")
             pprint(form_details)
-            is_vulnerable = {colorama.Fore.GREEN}True
+            is_vulnerable = True
     return is_vulnerable
 if __name__ == "__main__":
     url = str(input("Target URL: "))
