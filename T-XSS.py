@@ -1,3 +1,4 @@
+import os
 from email import contentmanager
 import requests
 from pprint import pprint
