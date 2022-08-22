@@ -10,6 +10,7 @@ print("Coded By: ParzivalHack")
 print("Github: github.com/ParzivalHack")
 print("License: The source code of this tool is under the GPL v.3 License.")
 print("© 2022 Tommaso Bona")
+print("Example of website intentionally vulnerable to XSS (use this to test if the tool is working properly): https://xss-game.appspot.com/level1/frame")
 def get_all_forms(url):
     soup = bs(requests.get(url).content, "html.parser")
     return soup.find_all("form")
@@ -56,5 +57,5 @@ def scan_xss(url):
             is_vulnerable = True
     return is_vulnerable
 if __name__ == "__main__":
-    url = "https://xss-game.appspot.com/level1/frame"
+    url = str(input("Target URL: ")
     print(scan_xss(url))
