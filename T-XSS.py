@@ -11,7 +11,7 @@ print("Github: github.com/ParzivalHack")
 print("License: The source code of this tool is under the MIT License.")
 print("© 2022 Tommaso Bona")
 def get_all_forms(url):
-    soup = bs(request.get(url).content, "html.parser")
+    soup = bs(requests.get(url).content, "html.parser")
     return soup.find_all("form")
 def get_form_details(form):
     details = {}
