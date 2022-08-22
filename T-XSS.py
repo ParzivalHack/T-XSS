@@ -8,7 +8,7 @@ os.system("clear")
 os.system("toilet T-XSS")
 print("Coded By: ParzivalHack")
 print("Github: github.com/ParzivalHack")
-print("License: The source code of this tool is under the MIT License.")
+print("License: The source code of this tool is under the GPL v.3 License.")
 print("© 2022 Tommaso Bona")
 def get_all_forms(url):
     soup = bs(requests.get(url).content, "html.parser")
