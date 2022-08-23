@@ -1,7 +1,7 @@
 if [ -d "$HOME/T-XSS" ];
 then
 cd $HOME
-rm -rf T-DoS
+rm -rf T-XSS
 elif [ -d "$HOME/T-XSS" ];
 then
 cd $HOME
