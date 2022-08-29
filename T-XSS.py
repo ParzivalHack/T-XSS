@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup as bs
 from urllib.parse import urljoin
 import colorama
 os.system("clear")
-os.system("toilet T-Tools")
+os.system("toilet T-XSS")
 print("Coded By: ParzivalHack")
 print("Github: github.com/ParzivalHack")
 print("License: The source code of this tool is under the GPL v.3 License.")
