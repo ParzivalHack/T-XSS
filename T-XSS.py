@@ -16,7 +16,8 @@ def get_all_forms(url):
     return soup.find_all("form")
 def get_form_details(form):
     details = {}
-    action = form.attrs.get("action")import os
+    action = form.attrs.get("action")
+import os
 from email import contentmanager
 import requests
 from pprint import pprint
