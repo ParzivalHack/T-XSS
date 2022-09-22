@@ -14,12 +14,10 @@ This is how it works:
 # Installation of T-XSS
 * apt update && apt upgrade
 * pkg install python
-* pkg install python2
 * pkg install git
 * pkg install toilet
 * pkg install requests
 * pkg install bs4
-* pip install colorama
 * git clone https://github.com/ParzivalHack/T-XSS
 
 # Usage
