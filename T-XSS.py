@@ -52,10 +52,10 @@ def scan_xss(url):
         content = submit_form(form_details, url, js_script).content.decode()
         if js_script in content:
             print(f"[+] XSS Detected on {url}")
-            print(f"[*] Form details: ")
+            print("[*] Form details: ")
             pprint(form_details)
             is_vulnerable = True
     return is_vulnerable
 if __name__ == "__main__":
     url = str(input("Target URL: "))
-    print(scan_xss(url))
+    print(scan_xss(url)) 
