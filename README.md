@@ -13,16 +13,13 @@ This is how it works:
 
 # Installation of T-XSS
 * apt update && apt upgrade
-* pkg install python
-* pkg install git
-* pkg install toilet
-* pkg install requests
-* pkg install bs4
+* pip install -r requirements.txt
+* sudo apt install python (use pkg on Termux)
+* sudo apt install git (use pkg on Termux)
 * git clone https://github.com/ParzivalHack/T-XSS
 
 # Usage
 * cd T-XSS
-* chmod +x T-XSS.py
 * python T-XSS.py
 
 # Update
@@ -31,6 +28,4 @@ This is how it works:
 
 # License
 This tool is under the GPL v.3 License.
-
-© 2022 Tommaso Bona
 
